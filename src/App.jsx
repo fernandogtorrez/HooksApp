@@ -11,6 +11,8 @@ import { Memorize } from './06-memo/Memorize'
 import { Small } from './06-memo/Small'
 import { HookCallback } from './07-useCallback/HookCallback'
 import './App.css'
+import './09-reducer/intro-reducer'
+import { TodoApp } from './09-reducer/TodoApp'
 
 function App() {
   
@@ -19,7 +21,7 @@ function App() {
       <h1>Hooks App</h1>
       <hr />
       {/* <CounterApp/> */}
-      <HookCallback/>
+      <TodoApp/>
     </div>
   )
 }
