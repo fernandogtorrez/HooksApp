@@ -13,6 +13,7 @@ import { HookCallback } from './07-useCallback/HookCallback'
 import './App.css'
 import './09-reducer/intro-reducer'
 import { TodoApp } from './09-reducer/TodoApp'
+import { MainApp } from './10-useContext/MainApp'
 
 function App() {
   
@@ -21,7 +22,7 @@ function App() {
       <h1>Hooks App</h1>
       <hr />
       {/* <CounterApp/> */}
-      <TodoApp/>
+      <MainApp/>
     </div>
   )
 }
