@@ -1,7 +1,7 @@
 import React from 'react'
 import { TodoItem } from './TodoItem'
 
-export const TodoList = ({todos = [], onDeleteTodo, onToggleTodo}) => {
+export const TodoList = ({todos = [], onDeleteTodo, onToggleTodo, onEditTodo}) => {
   return (
     <div>
        <ul className="list-group">
@@ -13,6 +13,7 @@ export const TodoList = ({todos = [], onDeleteTodo, onToggleTodo}) => {
               todo={todo}
               onDeleteTodo={onDeleteTodo}
               onToggleTodo={onToggleTodo}
+              onEditTodo={onEditTodo}
               />
           ))
         }

@@ -22,7 +22,8 @@ function App() {
       <h1>Hooks App</h1>
       <hr />
       {/* <CounterApp/> */}
-      <MainApp/>
+      <TodoApp/>
+      {/* <MainApp/> */}
     </div>
   )
 }

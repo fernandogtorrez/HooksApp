@@ -35,11 +35,19 @@ export const useTodo = () => {
             payload: id
         })
     }
+
+    const handleEditTodo = (id,texto) => {
+        dispatch({
+            type: 'EDIT_TODO',
+            payload: {id,texto}
+        })
+    }
     return{
         todos,
         handleDeleteTodo,
         handleNewTodo,
         handleToggleTodo,
+        handleEditTodo,
         todosCount: todos.length,
         pendingTodosCount: todos.filter(todo => todo.done === false).length
     }

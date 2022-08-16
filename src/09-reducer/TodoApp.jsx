@@ -5,7 +5,7 @@ import { TodoList } from './TodoList'
 
 export const TodoApp = () => {
 
-    const {todos, todosCount, pendingTodosCount, handleDeleteTodo, handleToggleTodo, handleNewTodo} = useTodo()
+    const {todos, todosCount, pendingTodosCount, handleDeleteTodo, handleToggleTodo, handleNewTodo,handleEditTodo} = useTodo()
 
   return (
     <>
@@ -19,6 +19,7 @@ export const TodoApp = () => {
                     todos={todos}
                     onDeleteTodo={handleDeleteTodo}
                     onToggleTodo={handleToggleTodo}
+                    onEditTodo={handleEditTodo}
                 />
             </div>
             <div className="col-5">

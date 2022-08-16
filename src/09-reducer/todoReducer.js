@@ -18,6 +18,17 @@ export const todoReducer = (initialState = [], action) => {
           }
           return todo
         })
+      case 'EDIT_TODO':
+        return initialState.map(todo => {
+          if(todo.id === action.payload.id){
+            return{
+              ...todo,
+              description: action.payload.texto,
+              done: false,
+            }
+          }
+          return todo
+        })
   
     default:
         return initialState
